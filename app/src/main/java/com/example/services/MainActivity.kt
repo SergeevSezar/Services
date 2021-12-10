@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             startService(MyService.newIntent(this))
         }
         binding.foregroundService.setOnClickListener {
-            showNotification()
+            startForegroundService(MyForegroundService.newIntent(this))
         }
     }
 
